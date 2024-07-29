@@ -30,4 +30,4 @@ jobs:
             -Durl=https://maven.pkg.github.com/${{ github.repository_owner }}/$GITHUB_REPOSITORY \
             -DgeneratePom=true
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.Jenkins-Deployment-Token }}
