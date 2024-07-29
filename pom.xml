@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- Basic metadata about the project -->
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.oracle.database.jdbc</groupId>
+    <artifactId>ojdbc8</artifactId>
+    <version>19.3.0.0</version>
+    <packaging>jar</packaging>
+
+    <!-- Project metadata -->
+    <name>Oracle JDBC Driver</name>
+    <description>Oracle JDBC Driver for Java 8</description>
+    <url>https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html</url>
+
+    <!-- Licensing information -->
+    <licenses>
+        <license>
+            <name>Oracle Free Use Terms and Conditions</name>
+            <url>https://www.oracle.com/downloads/licenses/oracle-free-license.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <!-- Developer and organization information -->
+    <developers>
+        <developer>
+            <id>oracle</id>
+            <name>Oracle Corporation</name>
+            <organization>Oracle Corporation</organization>
+            <organizationUrl>https://www.oracle.com/</organizationUrl>
+        </developer>
+    </developers>
+
+    <!-- Dependency information (none for a standalone JAR like ojdbc8) -->
+    <dependencies>
+        <!-- Add any dependencies if required -->
+    </dependencies>
+
+    <!-- Distribution Management for publishing to GitHub Packages -->
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/ISB-GITHUB-PCM-INT/${project.artifactId}</url>
+        </repository>
+    </distributionManagement>
+</project>
