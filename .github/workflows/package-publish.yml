@@ -27,7 +27,7 @@ jobs:
             -Dpackaging=jar \
             -Dfile=ojdbc8.jar \
             -DrepositoryId=github \
-            -Durl=https://maven.pkg.github.com/${{ github.repository_owner }}/$GITHUB_REPOSITORY \
+            -Durl=https://maven.pkg.github.com/ISB-GITHUB-PCM-INT/${{ github.repository }} \
             -DgeneratePom=true
       env:
         GITHUB_TOKEN: ${{ secrets.Jenkins-Deployment-Token }}
